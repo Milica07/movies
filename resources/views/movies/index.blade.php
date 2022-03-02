@@ -1,3 +1,6 @@
+@extends('layouts.app')
+@section('titile', 'Movies')
+@section('content')
 <h2>Movies:</h2>
 @foreach ($movies as $movie)
     <div>
@@ -7,4 +10,4 @@
     <h4>{{ $movie->storyline }}</h4>
     </div>
 @endforeach
-
+@endsection
