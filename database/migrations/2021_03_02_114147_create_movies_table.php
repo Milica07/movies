@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('genre');
             $table->string('director');
             $table->year('year_recorded');
+            $table->text('storyline');
             $table->timestamps();
         });
     }
