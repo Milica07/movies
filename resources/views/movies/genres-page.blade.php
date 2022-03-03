@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@include('partials.sidebar')
 @section('title', 'Genres')
 @section('content')
 @foreach ($movies as $movie) <br>

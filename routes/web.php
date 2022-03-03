@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/movies', [MovieController::class, 'index']);
-Route::get('/movies/{id}', [MovieController::class, 'show']);
+Route::get('/movies/{id}', [MovieController::class, 'show'])->name('singleMovie');
 Route::get('/create', [MovieController::class, 'create']);
 Route::post('/create', [MovieController::class, 'store']);
 
