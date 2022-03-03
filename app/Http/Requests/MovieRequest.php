@@ -27,7 +27,7 @@ class MovieRequest extends FormRequest
             'title' => 'required|string',
             'genre' => 'required|string',
             'director' => 'string',
-            'year_recorded' => 'required|integer',
+            'year_recorded' => 'numeric|between:1990,' . now()->year,
             'storyline' => 'required|string|max:1000'
         ];
     }

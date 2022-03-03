@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\GenresController;
 use Illuminate\Support\Facades\Route;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +25,4 @@ Route::get('/create', [MovieController::class, 'create']);
 Route::post('/create', [MovieController::class, 'store']);
 
 Route::post('/comment/add', [CommentController::class, 'store']);
+Route::get('/movies/genres/{genre}', [GenresController::class, 'show']);
